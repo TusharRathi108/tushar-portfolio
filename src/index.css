@@ -74,11 +74,28 @@ body,
   }
 }
 
+@font-face {
+  font-family: "JetBrainsMono";
+  src: local("JetBrainsMono-VariableFont_wght"),
+    url("./assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "JetBrainsMonoIntalics";
+  src: local("JetBrainsMono-Italic-VariableFont_wght"),
+    url("./assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf");
+}
+
+:root {
+  --font-jetbrainsmono: "JetBrainsMono";
+  --font-jetbrainsmonoitalic: "JetBrainsMonoItalic";
+}
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply font-primary bg-primary text-white leading-loose;
   }
 }
