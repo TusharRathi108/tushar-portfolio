@@ -1,0 +1,32 @@
+import { NavLink } from "react-router-dom";
+import NavBar from "@/components/NavBar";
+import { Button } from "@/components/ui/button";
+
+const Header = () => {
+  return (
+    <header className="py-8 xl:py-12 text-white">
+      <div className="container mx-auto flex justify-between">
+        {/* Logo */}
+        <NavLink to={"/"}>
+          {" "}
+          <h1 className="text-4xl font-semibold">
+            TR<span className="text-accent">.</span>{" "}
+          </h1>{" "}
+        </NavLink>
+        {/* Desktop navbar & hire me button */}
+        <div className="hidden md:flex items-center gap-8">
+          <NavBar />
+          <NavLink to={"/contact"}>
+            <Button className="rounded-md p-2 bg-slate-950 hover:bg-slate-900">
+              Hire Me
+            </Button>{" "}
+          </NavLink>
+        </div>
+        {/* Mobile nav bar. */}
+        <div className="md:hidden">Mobile Nav</div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
