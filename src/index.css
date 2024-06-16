@@ -100,12 +100,12 @@ body,
     @apply font-primary leading-loose text-white bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-slate-500 via-slate-700 to-black;
   }
   .h1 {
-    @apply text-[48px] md:text-[80px] leading-[1.1] font-semibold;
+    @apply text-[48px] md:text-[95px] leading-[1.1] font-semibold;
   }
   .h2 {
-    @apply text-[36px] md:text-[48px] leading-[1.1] font-semibold;
+    @apply text-[38px] md:text-[60px] leading-[1.1] font-semibold;
   }
   .h3 {
-    @apply text-[20px] md:text-[24px] leading-[1.1] font-semibold;
+    @apply text-[30px] md:text-[40px] leading-[1.1] font-semibold;
   }
 }
