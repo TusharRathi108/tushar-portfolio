@@ -22,7 +22,7 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-8">
           <NavBar />
           <NavLink to={"/contact"}>
-            <Button className="rounded-md border border-slate-100 bg-slate-950 hover:bg-white hover:text-black transition delay-150 duration-300 ease-in-out">
+            <Button className="rounded-lg border border-slate-100 bg-slate-950/100 text-white hover:bg-white hover:text-black transition delay-150 duration-300 ease-in-out">
               Hire Me
             </Button>{" "}
           </NavLink>
