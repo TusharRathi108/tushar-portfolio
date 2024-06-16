@@ -5,9 +5,10 @@
 html,
 body,
 :root {
-  height: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 @layer base {
@@ -96,6 +97,6 @@ body,
     @apply border-border;
   }
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary leading-loose text-white bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-slate-500 via-slate-700 to-black;
   }
 }

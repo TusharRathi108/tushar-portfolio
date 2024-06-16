@@ -10,8 +10,8 @@ const Header = () => {
         {/* Logo */}
         <NavLink to={"/"}>
           {" "}
-          <h1 className="text-4xl font-semibold">
-            <Avatar className="h-[70px] w-[70px] rounded-md">
+          <h1 className="text-4xl h-[70px] w-[70px] font-semibold rounded-3xl from-slate-500 via-slate-700 to-black bg-gradient-to-r">
+            <Avatar className="h-full w-full p-1">
               <AvatarImage src="src/assets/TR-Logo.png" alt="TR" />
               <AvatarFallback> TR </AvatarFallback>
             </Avatar>
@@ -21,7 +21,7 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-8">
           <NavBar />
           <NavLink to={"/contact"}>
-            <Button className="rounded-md p-2 bg-slate-950 hover:bg-slate-900">
+            <Button className="rounded-md border border-slate-100 bg-slate-950 hover:bg-white hover:text-black transition delay-150 duration-300 ease-in-out">
               Hire Me
             </Button>{" "}
           </NavLink>
