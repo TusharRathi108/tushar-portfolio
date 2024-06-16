@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import NavBar from "@/components/NavBar";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import MobileNav from "@/components/MobileNav";
 
 const Header = () => {
   return (
@@ -27,7 +28,9 @@ const Header = () => {
           </NavLink>
         </div>
         {/* Mobile nav bar. */}
-        <div className="md:hidden">Mobile Nav</div>
+        <div className="md:hidden">
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
