@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import NavBar from "@/components/NavBar";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Header = () => {
   return (
@@ -10,7 +11,10 @@ const Header = () => {
         <NavLink to={"/"}>
           {" "}
           <h1 className="text-4xl font-semibold">
-            TR<span className="text-accent">.</span>{" "}
+            <Avatar className="h-[70px] w-[70px] rounded-md">
+              <AvatarImage src="src/assets/TR-Logo.png" alt="TR" />
+              <AvatarFallback> TR </AvatarFallback>
+            </Avatar>
           </h1>{" "}
         </NavLink>
         {/* Desktop navbar & hire me button */}
