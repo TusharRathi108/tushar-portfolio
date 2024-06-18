@@ -1,5 +1,3 @@
-import { useCountUp } from "react-countup";
-
 const Stats = () => {
   return <div>Stats</div>;
 };
