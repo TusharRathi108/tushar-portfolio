@@ -22,7 +22,7 @@ const Photo = () => {
         >
           <Avatar className="h-full w-full">
             <AvatarImage
-              src="src/assets/Profile1.png"
+              src="src/assets/Profile1.svg"
               style={{ objectFit: "cover" }}
             />
           </Avatar>
