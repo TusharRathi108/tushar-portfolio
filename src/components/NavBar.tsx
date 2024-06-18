@@ -21,8 +21,8 @@ const NavBar = () => {
             to={link.path}
             className={`${
               link.path === pathname &&
-              "text-orange-300 border-b-2 border-orange-300"
-            } capitalize font-medium hover:text-orange-300  hover:transition duration-500`}
+              "text-orange-300 border-b-2  border-orange-300"
+            } capitalize font-medium hover:text-orange-300 hover:transition duration-500`}
           >
             {link.name}
           </NavLink>
