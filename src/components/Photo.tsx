@@ -23,7 +23,7 @@ const Photo = () => {
           <Avatar className="h-full w-full">
             <AvatarImage
               src="src/assets/Profile1-removebg.png"
-              style={{ objectFit: "scale-down" }}
+              style={{ objectFit: "cover" }}
             />
           </Avatar>
         </motion.div>
@@ -39,7 +39,7 @@ const Photo = () => {
             cx="253"
             cy="253"
             r="250"
-            stroke="#00ff99"
+            stroke="#fb923c"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"

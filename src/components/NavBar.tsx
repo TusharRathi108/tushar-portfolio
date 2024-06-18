@@ -20,8 +20,9 @@ const NavBar = () => {
             key={index}
             to={link.path}
             className={`${
-              link.path === pathname && "text-accent border-b-2 border-accent"
-            } capitalize font-medium hover:text-accent transition-all `}
+              link.path === pathname &&
+              "text-orange-300 border-b-2 border-orange-300"
+            } capitalize font-medium hover:text-orange-300  hover:transition duration-500`}
           >
             {link.name}
           </NavLink>
