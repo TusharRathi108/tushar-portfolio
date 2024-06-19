@@ -59,13 +59,13 @@ const ServicePage = () => {
                   </div>
                   <NavLink
                     to={service.href}
-                    className="w-[50px] h-[50px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                    className="w-[50px] h-[50px] rounded-full bg-white group-hover:bg-orange-300 transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
                     <BsArrowDownRight className="text-primary text-2xl" />
                   </NavLink>
                 </div>
                 {/* Title */}
-                <h2 className="text-[42px] font-bold leading-none text-white mb-2 group-hover:text-accent transition-all duration-500">
+                <h2 className="text-[42px] font-bold leading-none text-white py-2 group-hover:text-orange-300 transition-all duration-500">
                   {" "}
                   {service.title}{" "}
                 </h2>
