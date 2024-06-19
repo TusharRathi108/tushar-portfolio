@@ -13,7 +13,7 @@ const Header = () => {
           {" "}
           <h1 className="text-4xl h-[80px] w-[80px] shadow-slate-500 shadow-inner font-semibold rounded-3xl from-slate-500 via-slate-700 to-black bg-gradient-to-r">
             <Avatar className="h-full w-full p-1">
-              <AvatarImage src="src/assets/TR-Logo.svg" alt="TR" />
+              <AvatarImage src="src/assets/images/TR-Logo.svg" alt="TR" />
               <AvatarFallback> TR </AvatarFallback>
             </Avatar>
           </h1>{" "}
