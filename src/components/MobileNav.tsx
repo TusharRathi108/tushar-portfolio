@@ -25,7 +25,7 @@ const MobileNav = () => {
           {" "}
           <div className="mt-[50px] flex flex-col gap-1 items-center text-center text-md">
             <Avatar className="h-[100px] w-[100px] rounded-3xl">
-              <AvatarImage src="src/assets/TR-Logo.png" alt="TR" />
+              <AvatarImage src="src/assets/images/TR-Logo.svg" alt="TR" />
               <AvatarFallback> TR </AvatarFallback>
             </Avatar>
             {/* name */}
