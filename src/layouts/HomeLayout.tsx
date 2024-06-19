@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const HomeLayout = () => {
   return (
-    <div className="felx flex-col h-full">
+    <div className="felx flex-col">
       <Header />
       <PageTransition>
         <Outlet />
