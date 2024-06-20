@@ -36,24 +36,27 @@ const MobileNav = () => {
           </div>
         </NavLink>
         {/* navigation links */}
-          <nav className="flex flex-col justify-center items-center text-white gap-4">
-            {links.map((link) => {
-              return (
-                <NavLink
-                  key={link.name}
-                  to={link.path}
-                  className={`${
-                    link.path === pathname &&
-                    "text-orange-300 border-b-2 border-orange-300"
-                  } 
-              capitalize hover:text-orange-300 transition-all durantion-500 ease-in`}
-                >
-                  {link.name}
-                </NavLink>
-              );
-            })}
-          </nav>
-          <div className="text-sm text-white text-center my-64 mb-1"> @Copyright Tushar Rathi </div>
+        <nav className="flex flex-col justify-center items-center text-white gap-4">
+          {links.map((link) => {
+            return (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                className={`${
+                  link.path === pathname &&
+                  "text-orange-300 border-b-2 border-orange-300"
+                } 
+              capitalize font-medium border-b-2 hover:text-orange-300 hover:transition duration-500 delay-150 ease-linear`}
+              >
+                {link.name}
+              </NavLink>
+            );
+          })}
+        </nav>
+        <div className="text-sm text-white text-center my-64 mb-1">
+          {" "}
+          @Copyright Tushar Rathi{" "}
+        </div>
       </SheetContent>
     </Sheet>
   );
