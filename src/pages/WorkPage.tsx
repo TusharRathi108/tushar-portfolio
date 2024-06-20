@@ -47,19 +47,16 @@ const projects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea officia quod deserunt, eveniet unde sunt.",
     stack: [
       {
-        name: "TypeScript",
+        name: "MERN",
       },
       {
-        name: "React.js",
+        name: "TypeScript",
       },
       {
         name: "Shadcn/ui",
       },
       {
         name: "Tailwind",
-      },
-      {
-        name: "Node.js",
       },
       {
         name: "MongoDb",
@@ -115,12 +112,12 @@ const WorkPage = () => {
         opacity: 1,
         transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
       }}
-      className="min-h-[80vh] flex flex-col justify-center py-4 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center py-6 xl:px-0"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[800px] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none text-wrap">
-            <div className="flex flex-col gap-[30px] h-[50%]">
+          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none text-wrap">
+            <div className="flex flex-col text-justify text-wrap gap-[30px] h-[50%]">
               {/* Outline num */}
               <div className="text-8xl leading-none font-extra-bold text-transparent text-outline ">
                 {" "}
@@ -130,13 +127,16 @@ const WorkPage = () => {
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-orange-300 transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
-              {/* Project description */}
+              {/* Project description */} 
               <p className="text-white/60">{project.description}</p>
               {/* Tech-stack */}
-              <ul className="flex gap-4 ">
+              <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-lg text-orange-300">
+                    <li
+                      key={index}
+                      className="text-[11px] xl:text-lg text-orange-300"
+                    >
                       {item.name}
                       {/* Remove the last comma */}
                       {index !== project.stack.length - 1 && ","}

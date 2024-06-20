@@ -201,19 +201,19 @@ const skills = {
 
 const ResumePage = () => {
   return (
-    <motion.div
+    <motion.section
       initial={{
         opacity: 0,
       }}
       animate={{
         opacity: 1,
         transition: {
-          delay: 1.5,
+          delay: 1,
           duration: 0.4,
           ease: "easeIn",
         },
       }}
-      className="min-h-[79.5vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-6 xl:py-0"
     >
       <div className="container mx-auto">
         <Tabs
@@ -368,7 +368,7 @@ const ResumePage = () => {
           </div>
         </Tabs>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

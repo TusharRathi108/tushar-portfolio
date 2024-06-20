@@ -47,9 +47,9 @@ const ContactPage = () => {
       className="py-6"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-[30px] ">
+        <div className="flex flex-col xl:flex-row md:items-center gap-[30px] ">
           {/* contact form */}
-          <div className="xl:w-[54%] order-2 xl:order-none">
+          <div className="w-full md:w-[80%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 backdrop-blur-xl bg-black/50 rounded-xl">
               <h3 className="text-4xl text-orange-300">Let's Work Together</h3>
               <p className="text-white/60">
@@ -96,12 +96,12 @@ const ContactPage = () => {
               {info.map((item, index) => {
                 return (
                   <li key={index} className="flex items-center gap-6">
-                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-orange-300 text-primary rounded-md flex items-center justify-center">
-                      <div className="text-[28px]">{item.icon}</div>
+                    <div className="w-[34px] h-[34px] md:w-[72px] md:h-[72px] bg-orange-300 text-primary rounded-md flex items-center justify-center">
+                      <div className="text-[15px] md:text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}:</p>
-                      <h3 className="text-xl">{item.description}</h3>
+                      <h3 className="text-[12px] md:text-xl">{item.description}</h3>
                     </div>
                   </li>
                 );
