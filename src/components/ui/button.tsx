@@ -9,14 +9,16 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-accent text-primary hover:bg-accent-hover rounded-full",
+        default:
+          "bg-orange-300 text-primary hover:bg-accent-hover rounded-full",
         primary: "bg-primary text-white",
         outline:
-          "border border-accent bg-transparent text-accent hover:bg-accent hover:text-primary",
+          "border border-orange-300 bg-transparent text-orange-300 hover:bg-orange-300 hover:text-primary",
       },
       size: {
         default: "h-[44px] px-6",
         sm: "h-[42px] px-6",
+        md: "h-[38px] px-6",
         lg: "h-[48px] px-8 text-sm uppercase tracking-[2px]",
       },
     },
