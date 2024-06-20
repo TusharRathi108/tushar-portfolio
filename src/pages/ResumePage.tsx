@@ -213,7 +213,7 @@ const ResumePage = () => {
           ease: "easeIn",
         },
       }}
-      className="min-h-[617px] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[79.5vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
         <Tabs
