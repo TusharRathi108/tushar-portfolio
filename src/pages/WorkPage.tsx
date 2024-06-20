@@ -124,10 +124,10 @@ const WorkPage = () => {
                 {project.num}{" "}
               </div>
               {/* Project category */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-orange-300 transition-all duration-500 capitalize">
+              <h2 className="text-[42px] font-bold leading-none text-white capitalize">
                 {project.category} project
               </h2>
-              {/* Project description */} 
+              {/* Project description */}
               <p className="text-white/60">{project.description}</p>
               {/* Tech-stack */}
               <ul className="flex gap-4">
@@ -193,7 +193,7 @@ const WorkPage = () => {
                       {/* Overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10 rounded-md"></div>
                       {/* Image */}
-                      <Avatar className="w-full h-full relative rounded-md border border-orange-500">
+                      <Avatar className="w-full h-full relative rounded-md border border-orange-300">
                         <AvatarImage
                           src={project.image}
                           className="object-cover"

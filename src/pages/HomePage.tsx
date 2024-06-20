@@ -19,7 +19,7 @@ const HomePage = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between pb-4 xl:pt-1 xl:pb-[80px]">
           {/* Information about me */}
-          <div className="text-center xl:h-[425px] xl:text-left order-2 xl:order-none shadow-slate-200/20 shadow-md rounded-3xl px-7 py-4">
+          <div className="text-center xl:h-[425px] xl:text-left order-2 xl:order-none backdrop-blur-lg bg-black/40 shadow-slate-200/20 shadow-lg rounded-3xl px-7 py-4">
             <h1 className="text-4xl p-2 mb-3">
               <span className="text-orange-300">Hi, myself</span>
               <br />

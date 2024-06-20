@@ -19,7 +19,7 @@ const MobileNav = () => {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-slate-200" />
       </SheetTrigger>
-      <SheetContent className="text-black felx felx-col bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-slate-500 via-slate-700 to-black">
+      <SheetContent className="text-black felx felx-col bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-slate-800 to-black">
         {/* Logo */}
         <NavLink to={"/"}>
           {" "}
