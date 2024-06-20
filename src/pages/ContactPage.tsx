@@ -47,7 +47,7 @@ const ContactPage = () => {
       className="py-6"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row md:items-center gap-[30px] ">
+        <div className="flex flex-col xl:flex-row items-center gap-[30px] ">
           {/* contact form */}
           <div className="w-full md:w-[80%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 backdrop-blur-xl bg-black/50 rounded-xl">
