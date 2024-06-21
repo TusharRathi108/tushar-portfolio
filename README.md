@@ -43,6 +43,7 @@ Follow these steps to get a copy of this project up and running on your local ma
 ### Installation
 
 1. Clone the repository
+
    ```bash
    git clone https://github.com/TusharRathi108/tushar-portfolio.git
    ```
@@ -53,6 +54,7 @@ Follow these steps to get a copy of this project up and running on your local ma
    ```
 
 3. Install dependencies
+
    ```bash
    npm install
    ```
@@ -71,9 +73,9 @@ Follow these steps to get a copy of this project up and running on your local ma
 
 This project is designed to be an intuitive and attractive portfolio template. Customize it with your own information, projects, and styles:
 
-• Update Profile Information: Modify the HomePage.tsx component to include your name, skills, and a brief introduction.
-• Add Your Projects: Create new pages or modify existing ones to showcase your projects.
-• Customize Styles: Adjust the Tailwind CSS classes to match your personal branding.
+1. Update Profile Information: Modify the HomePage.tsx component to include your name, skills, and a brief introduction.
+2. Add Your Projects: Create new pages or modify existing ones to showcase your projects.
+3.  Customize Styles: Adjust the Tailwind CSS classes to match your personal branding.
 
 ### Contributing
 
@@ -109,7 +111,7 @@ Contact
 
 Feel free to reach out for collaboration, questions, or feedback:
 
-• Email: [Mail - Tushar Rathu](tushar.rathi860@gmail.com)
-• LinkedIn: [LinkedIn - Tushar Rathi](https://www.linkedin.com/in/tushar-rathi-2ab6b1230)
+1. Email: [Mail - Tushar Rathi](tushar.rathi860@gmail.com)
+2. LinkedIn: [LinkedIn - Tushar Rathi](https://www.linkedin.com/in/tushar-rathi-2ab6b1230)
 
 Thank you for visiting my portfolio repository! I hope you find it useful and inspiring. Happy coding! 🚀
