@@ -34,7 +34,8 @@ const ContactPage = () => {
             <form className="flex flex-col gap-6 p-10 backdrop-blur-xl bg-black/50 rounded-xl">
               <h3 className="text-4xl text-orange-300">Let's Work Together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reach out today to bring innovation and excellence to your team
+                with my skills and expertise!
               </p>
               {/* Input fields */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
