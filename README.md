@@ -109,7 +109,7 @@ Contact
 
 Feel free to reach out for collaboration, questions, or feedback:
 
-• Email: [Mail]tushar.rathi860@gmail.com
-• LinkedIn: [Tushar Rathi](https://www.linkedin.com/in/tushar-rathi-2ab6b1230)
+• Email: [Mail - Tushar Rathu](tushar.rathi860@gmail.com)
+• LinkedIn: [LinkedIn - Tushar Rathi](https://www.linkedin.com/in/tushar-rathi-2ab6b1230)
 
 Thank you for visiting my portfolio repository! I hope you find it useful and inspiring. Happy coding! 🚀
