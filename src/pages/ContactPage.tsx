@@ -1,6 +1,8 @@
 import { z } from "zod";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { Error } from "@/components/Error";
 import { info } from "@/utils/contact-info";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -23,7 +25,12 @@ type ContactSchema = z.infer<typeof emailSchema>;
 
 const ContactPage = () => {
   // using react hook from for getting input field data.
-  const { register, control, handleSubmit } = useForm<ContactSchema>({
+  const {
+    register,
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ContactSchema>({
     resolver: zodResolver(emailSchema),
   });
 
@@ -74,22 +81,58 @@ const ContactPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input
                   type="firstname"
-                  placeholder="Firstname...."
+                  placeholder={`${
+                    errors.firstname?.message
+                      ? errors.firstname.message
+                      : "Firstname...."
+                  }`}
+                  className={`${
+                    errors.firstname?.message
+                      ? "text-destructive placeholder:text-destructive border border-destructive bg-white/90 focus:border-destructive"
+                      : ""
+                  }`}
                   {...register("firstname")}
                 />
                 <Input
                   type="lastname"
-                  placeholder="Lastname...."
+                  placeholder={`${
+                    errors.lastname?.message
+                      ? errors.lastname.message
+                      : " Lastname...."
+                  }`}
+                  className={`${
+                    errors.lastname?.message
+                      ? "text-destructive placeholder:text-destructive border border-destructive bg-white/90 focus:border-destructive"
+                      : ""
+                  }`}
                   {...register("lastname")}
                 />
                 <Input
                   type="email"
-                  placeholder="john.doe@example.com"
+                  placeholder={`${
+                    errors.email?.message
+                      ? errors.email.message
+                      : "* johndoe@example.com"
+                  }`}
+                  className={`${
+                    errors.email?.message
+                      ? "text-destructive placeholder:text-destructive border border-destructive bg-white/90 focus:border-destructive"
+                      : ""
+                  }`}
                   {...register("email")}
                 />
                 <Input
                   type="phone"
-                  placeholder="Phone Number"
+                  placeholder={`${
+                    errors.phone?.message
+                      ? errors.phone.message
+                      : "Phone number...."
+                  }`}
+                  className={`${
+                    errors.phone?.message
+                      ? "text-destructive placeholder:text-destructive border border-destructive bg-white/90 focus:border-destructive"
+                      : ""
+                  }`}
                   {...register("phone")}
                 />
               </div>
@@ -99,8 +142,20 @@ const ContactPage = () => {
                 control={control}
                 render={({ field }) => (
                   <Select onValueChange={field.onChange} value={field.value}>
-                    <SelectTrigger className="w-full">
-                      <SelectValue placeholder="Select a service..." />
+                    <SelectTrigger
+                      className={`${
+                        errors.service?.message
+                          ? "text-destructive placeholder:text-destructive border border-destructive bg-white/90 focus:border-destructive"
+                          : ""
+                      } w-full`}
+                    >
+                      <SelectValue
+                        placeholder={`${
+                          errors.service?.message
+                            ? errors.service.message
+                            : "Select a service...."
+                        }`}
+                      />
                     </SelectTrigger>
                     <SelectContent>
                       <SelectGroup>
@@ -125,15 +180,35 @@ const ContactPage = () => {
                 render={({ field }) => (
                   <Textarea
                     {...field}
-                    className="h-[200px]"
-                    placeholder="Type your message here."
+                    placeholder={`${
+                      errors.message?.message
+                        ? errors.message.message
+                        : "* Type your message here..."
+                    }`}
+                    className={`${
+                      errors.message
+                        ? "text-destructive placeholder:text-destructive border border-destructive bg-white/90 focus:border-destructive"
+                        : ""
+                    } h-[200px]`}
                   />
                 )}
               />
-              {/* button */}
-              <Button type="submit" size="md" className="max-w-40">
-                Send message
-              </Button>
+              <div className="flex flex-col justify-between md:flex-row gap-3">
+                {/* button */}
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="max-w-40 shadow-orange-900 shadow-inner hover:bg-white hover:shadow-black hover:shadow-inner transition duration-500 delay-200 ease-linear"
+                >
+                  Send message
+                </Button>
+                {/* Required Field Error */}
+                <Error
+                  message={
+                    "Required fields email and message should not be empty!"
+                  }
+                />
+              </div>
             </form>
           </div>
           {/* information */}
@@ -160,7 +235,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      <Toaster />
+      <Toaster position="top-right" />
     </motion.div>
   );
 };

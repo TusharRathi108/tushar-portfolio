@@ -9,25 +9,45 @@ enum Services {
 }
 
 export const emailSchema = z.object({
+  // optional
   firstname: z
-    .string()
-    .min(1, { message: "First Name cannont be empty!" })
-    .max(20, { message: "First Name cannont be more than 20 characters!" })
-    .trim(),
+    .optional(
+      z
+        .string()
+        .max(20, { message: "First Name cannont be more than 20 characters!" })
+        .trim()
+    )
+    .default(""),
   lastname: z
-    .string()
-    .min(1, { message: "Last Name cannont be empty!" })
-    .max(20, { message: "Last Name cannont be more than 20 characters!" })
-    .trim(),
-  email: z.string().email().trim(),
+    .optional(
+      z
+        .string()
+        .max(20, { message: "Last Name cannont be more than 20 characters!" })
+        .trim()
+    )
+    .default(""),
   phone: z
+    .optional(
+      z
+        .string()
+        .max(10, {
+          message: "Phone Number cannont be more than 10 characters!",
+        })
+        .trim()
+    )
+    .default(""),
+  service: z.optional(
+    z.nativeEnum(Services, { message: "No other Option is allowed!" })
+  ),
+  // Non-optional.
+  email: z
     .string()
-    .min(1, { message: "Phone Number cannont be empty!" })
-    .max(20, { message: "Phone Number cannont be more than 10 characters!" })
+    .email({ message: "Email is required for confirmation!" })
     .trim(),
-  service: z.nativeEnum(Services),
   message: z
     .string()
+    .min(1, { message: "Message is too short!" })
     .max(200, { message: "Message cannot exceed 200 characters!" })
-    .trim(),
+    .trim()
+    .default(""),
 });
