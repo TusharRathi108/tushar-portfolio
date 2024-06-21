@@ -5,7 +5,6 @@ import { FiDownload } from "react-icons/fi";
 import { skills } from "@/utils/skill-info";
 import { Button } from "@/components/ui/button";
 import { Typewriter } from "react-simple-typewriter";
-import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
