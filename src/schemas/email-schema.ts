@@ -36,9 +36,12 @@ export const emailSchema = z.object({
         .trim()
     )
     .default(""),
-  service: z.optional(
-    z.nativeEnum(Services, { message: "No other Option is allowed!" })
-  ),
+  service: z
+    .union([
+      z.nativeEnum(Services, { message: "No other Option is allowed!" }),
+      z.literal(""),
+    ])
+    .default(""),
   // Non-optional.
   email: z
     .string()

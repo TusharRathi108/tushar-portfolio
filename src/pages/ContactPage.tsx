@@ -27,6 +27,7 @@ const ContactPage = () => {
   const {
     register,
     control,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm<ContactSchema>({
@@ -47,6 +48,7 @@ const ContactPage = () => {
       )
       .then(() => {
         toast.success("Email sent successfully!");
+        reset();
         console.log(formData);
       })
       .catch((e) => {
@@ -183,6 +185,7 @@ const ContactPage = () => {
                 render={({ field }) => (
                   <Textarea
                     {...field}
+                    defaultValue={""}
                     placeholder={`${
                       errors.message?.message
                         ? errors.message.message
