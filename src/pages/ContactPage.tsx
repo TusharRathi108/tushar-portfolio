@@ -1,8 +1,10 @@
 import { z } from "zod";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { info } from "@/utils/contact-info";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import toast, { Toaster } from "react-hot-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { emailSchema } from "@/schemas/email-schema";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -26,8 +28,20 @@ const ContactPage = () => {
   });
 
   // handle submit function for the form.
-  const onSubmit: SubmitHandler<ContactSchema> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<ContactSchema> = (formData) => {
+    // sending email.
+    emailjs
+      .send("service_8ojnouk", "template_98yulh2", formData, {
+        publicKey: "vGsSRdV9TcwHH3F8y",
+      })
+      .then(() => {
+        toast.success("Email sent successfully!");
+        console.log(formData);
+      })
+      .catch((e) => {
+        toast.error("Something went wrong!");
+        console.log("Error: ", e);
+      });
   };
 
   return (
@@ -146,6 +160,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      <Toaster />
     </motion.div>
   );
 };
