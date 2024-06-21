@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { info } from "@/utils/contact-info";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 import {
   Select,
   SelectContent,
@@ -12,25 +12,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-
-// information for the contact.
-const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+91) 6283220270",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "tushar.rathi.tech@gmail.com",
-  },
-  {
-    icon: <FaMapMarkedAlt />,
-    title: "Address",
-    description: "Rupnagar, Punjab 140001",
-  },
-];
 
 const ContactPage = () => {
   return (
@@ -97,11 +78,15 @@ const ContactPage = () => {
                 return (
                   <li key={index} className="flex items-center gap-6">
                     <div className="w-[34px] h-[34px] md:w-[72px] md:h-[72px] bg-orange-300 text-primary rounded-md flex items-center justify-center">
-                      <div className="text-[15px] md:text-[28px]">{item.icon}</div>
+                      <div className="text-[15px] md:text-[28px]">
+                        {item.icon}
+                      </div>
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}:</p>
-                      <h3 className="text-[12px] md:text-xl">{item.description}</h3>
+                      <h3 className="text-[12px] md:text-xl">
+                        {item.description}
+                      </h3>
                     </div>
                   </li>
                 );

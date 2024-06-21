@@ -1,38 +1,7 @@
-import { BsArrowDownRight } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-
-// services offered in the portfolio.
-const services = [
-  {
-    num: "01",
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus.",
-    href: "",
-  },
-  {
-    num: "02",
-    title: "UI/UX",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus.",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "Logo Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus.",
-    href: "",
-  },
-];
+import { NavLink } from "react-router-dom";
+import { services } from "@/utils/service-info";
+import { BsArrowDownRight } from "react-icons/bs";
 
 const ServicePage = () => {
   return (

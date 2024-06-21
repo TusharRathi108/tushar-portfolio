@@ -1,17 +1,10 @@
 import Photo from "@/components/Photo";
-import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
-import { Button } from "@/components/ui/button";
+import Socials from "@/components/Socials";
 import { FiDownload } from "react-icons/fi";
+import { skills } from "@/utils/skill-info";
+import { Button } from "@/components/ui/button";
 import { Typewriter } from "react-simple-typewriter";
-
-// typewriter words array.
-const skills = [
-  "Database: MongoDB Atlas, MySQL",
-  "Backend: Node.js, Express",
-  "Libraries: Prisma, Axios, Tanstack Query, Recharts",
-  "Frontend: React.js, Next.js, Tailwind CSS, Chakra UI, Shadcn/ui",
-];
 
 const HomePage = () => {
   return (
