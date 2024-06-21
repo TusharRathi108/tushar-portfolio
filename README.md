@@ -115,3 +115,10 @@ Feel free to reach out for collaboration, questions, or feedback:
 2. LinkedIn: [LinkedIn - Tushar Rathi](https://www.linkedin.com/in/tushar-rathi-2ab6b1230)
 
 Thank you for visiting my portfolio repository! I hope you find it useful and inspiring. Happy coding! 🚀
+
+
+// message: z
+//   .string()
+//   .min(1, { message: "First Name cannont be empty!" })
+//   .max(200, { message: "Phone Number cannont be more than 200 characters!" })
+//   .trim(),
