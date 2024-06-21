@@ -37,9 +37,14 @@ const ContactPage = () => {
   const onSubmit: SubmitHandler<ContactSchema> = (formData) => {
     // sending email.
     emailjs
-      .send("service_8ojnouk", "template_98yulh2", formData, {
-        publicKey: "vGsSRdV9TcwHH3F8y",
-      })
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        formData,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
       .then(() => {
         toast.success("Email sent successfully!");
         console.log(formData);
@@ -49,7 +54,6 @@ const ContactPage = () => {
         console.log("Error: ", e);
       });
   };
-
   return (
     <motion.div
       initial={{ opacity: 0 }}

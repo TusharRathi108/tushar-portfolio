@@ -47,6 +47,7 @@ Follow these steps to get a copy of this project up and running on your local ma
    ```bash
    git clone https://github.com/TusharRathi108/tushar-portfolio.git
    ```
+
 2. Navigate to the project directory
 
    ```bash
@@ -58,6 +59,41 @@ Follow these steps to get a copy of this project up and running on your local ma
    ```bash
    npm install
    ```
+
+## Environment Variables Setup
+
+To configure your environment variables for EmailJS, you need to populate the `.env` file with the following variables. These variables are required for sending emails using EmailJS:
+
+### Steps to Get Your EmailJS Credentials
+
+1. **Sign in to EmailJS:**
+   Go to [EmailJS](https://www.emailjs.com/) and sign in to your account. If you don't have an account, you can create one for free.
+
+2. **Create a New Email Service:**
+
+   - Navigate to the "Email Services" section.
+   - Click on "Add New Service" and follow the prompts to set up your email service.
+   - Once the service is created, you'll get a `Service ID`. Copy this ID and paste it into the `VITE_SERVICE_ID` field in your `.env` file.
+
+3. **Create a New Email Template:**
+
+   - Go to the "Email Templates" section.
+   - Click on "Create New Template" and design your email template.
+   - Save the template, and you'll get a `Template ID`. Copy this ID and paste it into the `VITE_TEMPLATE_ID` field in your `.env` file.
+
+4. **Get Your Public Key:**
+   - Navigate to the "API Keys" section.
+   - You will find your `Public Key` there. Copy this key and paste it into the `VITE_PUBLIC_KEY` field in your `.env` file.
+
+### Example .env File
+
+```plaintext
+VITE_SERVICE_ID=your_service_id_here
+VITE_TEMPLATE_ID=your_template_id_here
+VITE_PUBLIC_KEY=your_public_key_here
+```
+
+By following these steps, you will ensure that your EmailJS configuration is correctly set up in your project.
 
 ### Running the Project
 
@@ -75,7 +111,7 @@ This project is designed to be an intuitive and attractive portfolio template. C
 
 1. Update Profile Information: Modify the HomePage.tsx component to include your name, skills, and a brief introduction.
 2. Add Your Projects: Create new pages or modify existing ones to showcase your projects.
-3.  Customize Styles: Adjust the Tailwind CSS classes to match your personal branding.
+3. Customize Styles: Adjust the Tailwind CSS classes to match your personal branding.
 
 ### Contributing
 
@@ -115,10 +151,3 @@ Feel free to reach out for collaboration, questions, or feedback:
 2. LinkedIn: [LinkedIn - Tushar Rathi](https://www.linkedin.com/in/tushar-rathi-2ab6b1230)
 
 Thank you for visiting my portfolio repository! I hope you find it useful and inspiring. Happy coding! 🚀
-
-
-// message: z
-//   .string()
-//   .min(1, { message: "First Name cannont be empty!" })
-//   .max(200, { message: "Phone Number cannont be more than 200 characters!" })
-//   .trim(),
