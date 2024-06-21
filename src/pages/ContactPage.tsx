@@ -32,6 +32,9 @@ const ContactPage = () => {
     formState: { errors },
   } = useForm<ContactSchema>({
     resolver: zodResolver(emailSchema),
+    defaultValues: {
+      service: "",
+    },
   });
 
   // handle submit function for the form.
@@ -146,7 +149,11 @@ const ContactPage = () => {
                 name="service"
                 control={control}
                 render={({ field }) => (
-                  <Select onValueChange={field.onChange} value={field.value}>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue=""
+                    value={field.value}
+                  >
                     <SelectTrigger
                       className={`${
                         errors.service?.message
