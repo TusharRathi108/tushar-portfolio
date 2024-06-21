@@ -23,6 +23,7 @@ export default defineConfig({
         },
       },
     },
+    outDir: "dist",
     chunkSizeWarningLimit: 1000, // Adjust the limit as needed
   },
 });
