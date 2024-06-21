@@ -21,8 +21,8 @@ export const projects = [
       },
     ],
     image: "/assets/work/GameHub-Thumb.png",
-    live: "",
-    github: "",
+    live: "https://game-hub-flax-one.vercel.app",
+    github: "https://github.com/TusharRathi86/RAWG-Clone",
   },
   {
     num: "02",
@@ -75,7 +75,7 @@ export const projects = [
       },
     ],
     image: "/assets/work/MovieLibrary-Thumb2.png",
-    live: "",
-    github: "",
+    live: "https://movies-library-kohl.vercel.app",
+    github: "https://github.com/TusharRathi108/movies-library",
   },
 ];
