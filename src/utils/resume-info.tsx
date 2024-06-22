@@ -34,7 +34,7 @@ export const education = {
   items: [
     {
       institution: "Chandigarh University",
-      degree: "Bachelor's in Computer Science & Engineering",
+      degree: "Bachelor's in CSE",
       duration: "August, 2020 - July, 2024",
       percentage: "80.3%",
     },
