@@ -2,30 +2,30 @@
 export const services = [
   {
     num: "01",
-    title: "Web Development",
-    description:
-      "Transforming ideas into dynamic web solutions using modern technologies for responsive designs, seamless functionality, and exceptional user experiences.",
-    href: "",
-  },
-  {
-    num: "02",
     title: "UI/UX",
     description:
       "Creating intuitive, user-friendly interfaces with modern design principles to enhance user experience and drive engagement for web and mobile applications.",
     href: "",
   },
   {
-    num: "03",
-    title: "Logo Designer",
+    num: "02",
+    title: "Fullstack Development",
     description:
-      "Designing impactful and memorable logos that reflect brand identity, ensuring a strong visual presence and lasting impression on your audience.",
+      "Building scalable full-stack applications with the MERN stack, Next.js, and NestJS, ensuring seamless performance and integration across all layers.",
+    href: "",
+  },
+  {
+    num: "03",
+    title: "LLM Chatbot & ML",
+    description:
+      "Building intelligent LLM-powered chatbots that deliver accurate, context-aware responses, integrate seamlessly with business systems, and enhance customer support through real-time, automated interactions.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Mobile App Development",
     description:
-      "Optimizing websites for search engines to improve visibility, drive organic traffic, and enhance online presence with effective SEO strategies and techniques.",
+      "Developing cross-platform mobile applications using Flutter, delivering smooth performance, modern UI, and native-like experiences on both Android and iOS with a single, efficient codebase.",
     href: "",
   },
 ];

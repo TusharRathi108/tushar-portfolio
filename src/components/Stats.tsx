@@ -3,21 +3,21 @@ import CountUp from "react-countup";
 // specifying the stats.
 const myStats = [
   {
-    num: 5,
+    num: 4,
     text: "Projects completed",
   },
   {
-    num: 1,
+    num: 2,
     text: "Years of experience",
   },
   {
-    num: 6,
+    num: 4,
     text: "Technologies mastered",
   },
-  {
-    num: 500,
-    text: "Code commits",
-  },
+  // {
+  //   num: 500,
+  //   text: "Code commits",
+  // },
 ];
 
 const Stats = () => {
@@ -32,11 +32,16 @@ const Stats = () => {
                 key={index}
               >
                 {" "}
-                <CountUp
-                  end={item.num}
-                  duration={15}
-                  className="text-4xl xl:text-6xl font-extra-bold"
-                />{" "}
+                <div className="flex items-center">
+                  <CountUp
+                    end={item.num}
+                    duration={15}
+                    className="text-4xl xl:text-6xl font-extra-bold"
+                  />
+                  {item.text === "Years of experience" ? (
+                    <span className="text-4xl xl:text-6xl">+</span>
+                  ) : null}
+                </div>
                 <p
                   className={`${
                     item.text?.length < 15 ? "max-w-[100px]" : "max-w-[150px]"

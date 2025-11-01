@@ -12,7 +12,7 @@ const HomePage = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between pb-4 xl:pt-1 xl:pb-[80px]">
           {/* Information about me */}
-          <div className="text-center xl:h-[425px] xl:text-left order-2 xl:order-none backdrop-blur-lg bg-black/40 shadow-slate-200/20 shadow-lg rounded-3xl px-7 py-4">
+          <div className="text-center xl:h-[430px] xl:text-left order-2 xl:order-none backdrop-blur-lg bg-black/40 shadow-slate-200/20 shadow-lg rounded-3xl px-7 py-4">
             <h1 className="text-4xl p-2 mb-3">
               <span className="text-orange-300">Hi, myself</span>
               <br />
@@ -32,7 +32,7 @@ const HomePage = () => {
                 />
               </span>
             </span>
-            <p className="max-w-[600px] xl:mx-0 mb-9 text-white/80">
+            <p className="max-w-[600px] xl:mx-0 mb-5 text-white/80">
               A passionate developer with a knack for crafting elegant digital
               experiences. <br /> Proficient in: <br />
               <span className="text-orange-300">
@@ -49,11 +49,8 @@ const HomePage = () => {
               </span>
             </p>
             {/* DownLoad CV */}
-            <div className="flex flex-col justify-center xl:flex-row items-center gap-8">
-              <a
-                href={"/assets/resume/SDE_Resume.pdf"}
-                download="Tushar-Resume"
-              >
+            <div className="flex flex-col justify-center xl:flex-row items-center gap-4">
+              <a href={"/assets/resume/tr-resume.pdf"} download="Tushar-Resume">
                 <Button
                   variant="outline"
                   size={"lg"}

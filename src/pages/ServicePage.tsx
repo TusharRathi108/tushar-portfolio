@@ -13,7 +13,7 @@ const ServicePage = () => {
             opacity: 1,
             transition: { delay: 1, duration: 0.4, ease: "easeIn" },
           }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
+          className="grid grid-cols-1 text-justify md:grid-cols-2 gap-[60px]"
         >
           {services.map((service, index) => {
             return (

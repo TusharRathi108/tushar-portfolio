@@ -1,20 +1,38 @@
+import { DiMsqlServer } from "react-icons/di";
+import { FaNodeJs, FaPython } from "react-icons/fa";
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaFigma,
-} from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+  SiDotnet,
+  SiFlutter,
+  SiMongodb,
+  SiNestjs,
+  SiNextdotjs,
+  SiPostgresql,
+  SiShadcnui,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 // experience data for resume.
 export const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "As a developer, I’ve built responsive web applications with Next.js, React, and Tailwind CSS, integrated APIs, managed MongoDB databases, and created dynamic dashboards, ensuring seamless functionality and exceptional user experiences.",
+    "Hi, I’m Tushar Rathi — a Full-Stack Developer and UI/UX Designer with end-to-end experience delivering modern web and mobile applications, from concept and design to development and deployment. I specialize in building scalable, high-performance solutions using the MERN stack (MongoDB, Express.js, React.js, Node.js) and creating cross-platform mobile apps with Flutter.",
   items: [
+    {
+      company: "Aeologic Technologies",
+      position: "Software Developer",
+      duration: "March-2025 - Present",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus laborum voluptate aliquam.",
+    },
+    {
+      company: "Shaurya Software",
+      position: "Trainee Developer",
+      duration: "August-2024 - January-2025",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus laborum voluptate aliquam.",
+    },
     {
       company: "Smart iT Ventures",
       position: "NodeJs Intern",
@@ -60,36 +78,52 @@ export const skills = {
     "My skills include full-stack web development with Next.js, React, and Node.js, responsive design with Tailwind CSS, API integration, database management with MongoDB, and creating dynamic dashboards with Recharts.",
   skillList: [
     {
-      icon: <FaHtml5 />,
-      name: "HTML5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "CSS3",
-    },
-    {
       icon: <SiTailwindcss />,
       name: "Tailwind CSS",
     },
     {
-      icon: <FaFigma />,
-      name: "Figma",
+      icon: <SiShadcnui />,
+      name: "Shadcn/ui",
     },
     {
-      icon: <FaJs />,
-      name: "Javascript",
+      icon: <SiTypescript />,
+      name: "Typescript",
     },
     {
-      icon: <FaReact />,
-      name: "React.js",
+      icon: <FaPython />,
+      name: "Python",
     },
     {
       icon: <FaNodeJs />,
-      name: "Node.js",
+      name: "NodeJS",
+    },
+    {
+      icon: <SiNestjs />,
+      name: "NestJS",
     },
     {
       icon: <SiNextdotjs />,
-      name: "Next.js",
+      name: "NextJS",
+    },
+    {
+      icon: <SiDotnet />,
+      name: ".Net Core",
+    },
+    {
+      icon: <SiFlutter />,
+      name: "Flutter",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
+    },
+    {
+      icon: <DiMsqlServer />,
+      name: "PostgreSQL",
     },
   ],
 };
@@ -105,29 +139,29 @@ export const about = {
       fieldValue: "Tushar Rathi",
     },
     {
-      fieldName: "Phone",
-      fieldValue: "(+91) 6283220270",
+      fieldName: "Email",
+      fieldValue: "tushar.rathi.tech@gmail.com",
     },
+    // {
+    //   fieldName: "Phone",
+    //   fieldValue: "(+91) 6283220270",
+    // },
     {
       fieldName: "Experience",
-      fieldValue: "1 Year",
+      fieldValue: "2+ Year",
     },
-    {
-      fieldName: "Skype",
-      fieldValue: "Tushar Rathi",
-    },
+    // {
+    //   fieldName: "Skype",
+    //   fieldValue: "Tushar Rathi",
+    // },
     {
       fieldName: "Nationality",
       fieldValue: "Indian",
     },
-    {
-      fieldName: "Email",
-      fieldValue: "tushar.rathi.tech@gmail.com",
-    },
-    {
-      fieldName: "FullStack Dev",
-      fieldValue: "Available",
-    },
+    // {
+    //   fieldName: "FullStack Dev",
+    //   fieldValue: "Available",
+    // },
     {
       fieldName: "Language",
       fieldValue: "English, Hindi",

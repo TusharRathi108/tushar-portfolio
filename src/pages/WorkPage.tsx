@@ -45,12 +45,18 @@ const WorkPage = () => {
                 {" "}
                 {project.num}{" "}
               </div>
-              {/* Project category */}
+              {/* Project title */}
               <h2 className="text-[42px] font-bold leading-none text-white capitalize">
-                {project.category} project
+                {project.title}
               </h2>
               {/* Project description */}
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60">
+                {" "}
+                <span className="text-orange-400">
+                  (Category: {project.category})
+                </span>{" "}
+                {project.description}
+              </p>
               {/* Tech-stack */}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
@@ -85,19 +91,21 @@ const WorkPage = () => {
                   </TooltipProvider>{" "}
                 </NavLink>
                 {/* Github repository link */}
-                <NavLink to={project.github}>
-                  {" "}
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-orange-300" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p className="capitalize">Github Repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>{" "}
-                </NavLink>
+                {project.github ?? (
+                  <NavLink to={project.github}>
+                    {" "}
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-orange-300" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="capitalize">Github Repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>{" "}
+                  </NavLink>
+                )}
               </div>
             </div>
           </div>

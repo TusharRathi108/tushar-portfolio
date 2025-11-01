@@ -10,7 +10,7 @@ const socials = [
   },
   {
     name: "linkedin",
-    path: "https://www.linkedin.com/in/tushar-rathi-2ab6b1230",
+    path: "https://www.linkedin.com/in/tushar-rathi-2ab6b1230/",
     icon: <FaLinkedinIn />,
   },
   {

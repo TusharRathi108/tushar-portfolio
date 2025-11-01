@@ -1,12 +1,12 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 
 // information for the contact.
 export const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+91) 6283220270",
-  },
+  // {
+  //   icon: <FaPhoneAlt />,
+  //   title: "Phone",
+  //   description: "(+91) 6283220270",
+  // },
   {
     icon: <FaEnvelope />,
     title: "Email",

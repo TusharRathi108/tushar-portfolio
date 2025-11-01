@@ -215,12 +215,15 @@ const ContactPage = () => {
                 >
                   Send message
                 </Button>
-                {/* Required Field Error */}
-                <Error
-                  message={
-                    "Required fields email and message should not be empty!"
-                  }
-                />
+                {errors.message ? (
+                  <Error
+                    message={
+                      "Required fields email and message should not be empty!"
+                    }
+                  />
+                ) : (
+                  ""
+                )}
               </div>
             </form>
           </div>

@@ -1,7 +1,10 @@
 // typewriter words array.
 export const skills = [
-    "Database: MongoDB Atlas, MySQL",
-    "Backend: Node.js, Express",
-    "Libraries: Prisma, Axios, Tanstack Query, Recharts",
-    "Frontend: React.js, Next.js, Tailwind CSS, Chakra UI, Shadcn/ui",
-  ];
+  "Database: MongoDB, PostgreSQL, MS SQL Server",
+  "Backend: ExpressJS, NestJS, .NET Core",
+  "Frontend: ReactJS, NextJS",
+  "Styling: Tailwind CSS, Shadcn/ui",
+  "App Development: Flutter",
+  "Libraries: Redux, RTK Query, Mongoose, Prisma",
+  "Version Control: Git, GitLab",
+];
