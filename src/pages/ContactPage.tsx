@@ -173,13 +173,13 @@ const ContactPage = () => {
                       <SelectGroup>
                         <SelectLabel>Select a service</SelectLabel>
                         <SelectItem value="UI/UX">UI/UX</SelectItem>
-                        <SelectItem value="Web-Development">
+                        <SelectItem value="Fullstack Development">
                           Fullstack Development
                         </SelectItem>
-                        <SelectItem value="Logo-Designer">
+                        <SelectItem value="LLM Chatbot & ML">
                           LLM Chatbot & ML
                         </SelectItem>
-                        <SelectItem value="SEO">
+                        <SelectItem value="Mobile Application Development">
                           Mobile Application Development
                         </SelectItem>
                       </SelectGroup>
