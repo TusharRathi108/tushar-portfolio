@@ -172,14 +172,16 @@ const ContactPage = () => {
                     <SelectContent>
                       <SelectGroup>
                         <SelectLabel>Select a service</SelectLabel>
-                        <SelectItem value="Web-Development">
-                          Web Development
-                        </SelectItem>
                         <SelectItem value="UI/UX">UI/UX</SelectItem>
-                        <SelectItem value="Logo-Designer">
-                          Logo Designer
+                        <SelectItem value="Web-Development">
+                          Fullstack Development
                         </SelectItem>
-                        <SelectItem value="SEO">SEO</SelectItem>
+                        <SelectItem value="Logo-Designer">
+                          LLM Chatbot & ML
+                        </SelectItem>
+                        <SelectItem value="SEO">
+                          Mobile Application Development
+                        </SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>
